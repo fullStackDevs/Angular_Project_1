@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ngRepeatExampleApp">
+<head>
+    <meta charset="UTF-8">
+    <title>ngRepeat examples</title>
+    <script src="../angular.js"></script>
+    <script src="ngRepeatExamples.js"></script>
+</head>
+<body>
+    <div ng-controller="ngRepeatExampleController as ctrl">
+        <h3>Elements from the array_1: </h3>
+
+        <p ng-repeat="obj in ctrl.myArray">
+            {{obj}}
+        </p>
+        <hr/>
+        <br/>
+
+        <h3>Objects from the persons array</h3>
+        <div ng-repeat="pers in ctrl.persons">
+            <p>Index of the element in the array: {{ $index }}</p>
+            <p>Is it the first element: {{$first}}</p>
+            Name: {{pers.name}}<br/>
+            Age: {{pers.age}}
+        </div>
+
+    </div>
+
+</body>
+</html>

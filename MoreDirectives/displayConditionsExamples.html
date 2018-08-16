@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="DisplayConditionsApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Display conditions examples</title>
+    <script src="../angular.js"></script>
+    <script src="displayConditionsExamples.js"></script>
+</head>
+    <body>
+        <div ng-controller="DisplayConditionsCtrl as ctrl">
+            <input type="checkbox" ng-model="ctrl.displayTitle"/>Display title
+
+            <h2 ng-if="ctrl.displayTitle">
+               Display conditions example
+            </h2>
+            <hr/>
+
+            <input type="checkbox" ng-model="ctrl.showParagraph_1"/>Show paragraph 1
+            <p ng-show="ctrl.showParagraph_1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique tincidunt magna quis vehicula. Duis eget augue consectetur, pellentesque nunc id, eleifend nulla. Fusce eget scelerisque est, sit amet finibus odio. Quisque maximus nibh sed eros interdum dictum. Sed ex diam, tempus imperdiet maximus id, fermentum a erat. Donec eu mauris sed ipsum finibus viverra. In hac habitasse platea dictumst. Ut luctus mattis dui, in pulvinar orci blandit sed. Nullam pretium libero enim, nec finibus augue porttitor eget. Donec finibus urna tortor, quis facilisis dui facilisis vitae. Proin in ipsum porta elit lobortis porttitor.
+            </p>
+            <hr/>
+
+            <input type="checkbox" ng-model="ctrl.hideParagraph_2">Hide paragraph 2
+            <p ng-hide="ctrl.hideParagraph_2">
+                Nam at pulvinar mi. Aliquam rhoncus nisl id lacus rhoncus pharetra. Maecenas non erat a lacus porta vulputate. Maecenas iaculis elit sit amet molestie semper. Cras fermentum mauris vel ex interdum, quis molestie metus consequat. Maecenas eu eros nec orci tempor euismod at at augue. Morbi et molestie nunc. Duis semper urna arcu, quis aliquet ligula ultricies sit amet. Proin non arcu nisi. Duis et maximus turpis, vel elementum nibh.
+            </p>
+
+
+        </div>
+
+
+    </body>
+</html>
