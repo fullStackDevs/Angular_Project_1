@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="externalModuleApp">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://mbenford.github.io/ngTagsInput/css/ng-tags-input.min.css" />
+    <title>External module ussage example</title>
+    <script src="../angular.js"></script>
+    <script src="http://mbenford.github.io/ngTagsInput/js/ng-tags-input.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <div ng-controller="TagsDemoCtrl as ctrl">
+        <tags-input ng-model="ctrl.tags"></tags-input>
+        <p>Model: {{ctrl.tags}}</p>
+    </div>
+</body>
+</html>
